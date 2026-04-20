@@ -1,7 +1,10 @@
 streamlit
 ultralytics
+# torch dan torchvision biasanya otomatis terinstal via ultralytics, 
+# tapi boleh ditulis jika ingin versi CPU-only agar size slug lebih kecil:
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 torchvision
-pillow
 pandas
 opencv-python-headless==4.8.1.78
+pillow
