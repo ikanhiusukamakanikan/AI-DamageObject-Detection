@@ -1,0 +1,9 @@
+path: datasets_gabungan
+train: images/train
+val: images/val
+
+names:
+  0: pothole
+  1: crack
+  2: corrosion
+  3: sampah

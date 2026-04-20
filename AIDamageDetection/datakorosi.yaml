@@ -1,0 +1,6 @@
+path: datasets_korosi
+train: images/train
+val: images/val
+
+names:
+  0: corrosion
