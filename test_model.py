@@ -3,18 +3,8 @@ import sys
 import streamlit as st
 import pandas as pd
 from PIL import Image
+from ultralytics import YOLO
 
-# --- FIX WINERROR 1114 ---
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-os.environ["MKL_DEBUG_CPU_TYPE"] = "5"
-
-# Penanganan Error Import
-try:
-    from ultralytics import YOLO
-except OSError as e:
-    st.error(f"Terjadi kesalahan sistem (DLL Error): {e}")
-    st.stop()
 
 # --- CONFIGURATION ---
 st.set_page_config(page_title="AI Damage Dashboard", layout="wide", initial_sidebar_state="expanded")
